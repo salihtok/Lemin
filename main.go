@@ -12,5 +12,6 @@ func main() {
 	}
 	readFile(os.Args[1])
 	SeperateRows() // verileri parçaladık.
+	ProcessRows()
 
 }
