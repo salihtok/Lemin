@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	fmt.Println("ömer kalkan kolsuzdur")
+	if len(os.Args[1]) != 2 {
+		fmt.Println("Usage: go run . <mapFile>")
+		os.Exit(1)
+	}
+	readFile(os.Args[1])
+
 }
