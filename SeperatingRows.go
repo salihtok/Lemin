@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	models "models/Models"
 	"strings"
 )
@@ -15,5 +14,5 @@ func SeperateRows() {
 		}
 
 	}
-	fmt.Println(models.Rows)
+	//fmt.Println(models.Rows)
 }

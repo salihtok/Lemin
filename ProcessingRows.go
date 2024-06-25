@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	models "models/Models"
 	"strconv"
 	"strings"
@@ -52,4 +53,8 @@ func ProcessRows() {
 	ContentError(isThereStart, isThereEnd, isThereConnect, isThereComment, isThereAnts)
 	FormatController()
 	ConnectionController()
+
+	fmt.Println("***************the test")
+	fmt.Println(models.ConnectRows)
+	fmt.Println("***************the test")
 }
